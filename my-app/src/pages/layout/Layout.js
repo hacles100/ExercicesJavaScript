@@ -1,10 +1,10 @@
-import { Outlet, Link } from "react-router-dom";
+import {Link, Outlet} from "react-router-dom";
 
 
 function Layout(){
 
-    return(
-        <div>
+    return<>
+      
            <nav>
             <Link to='/'>All</Link>
             <Link to='/images'>Images</Link>
@@ -15,10 +15,7 @@ function Layout(){
                 <Outlet />
             </div>
 
-        </div>
-
-        
-    )
+            </>
 }
 
 export default Layout
